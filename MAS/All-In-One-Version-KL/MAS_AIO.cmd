@@ -427,7 +427,7 @@ goto dk_done
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title  DANY TECH - System Tools
 if not defined terminal mode 76, 34
 
 if exist "%SystemRoot%\Servicing\Packages\Microsoft-Windows-Server*Edition~*.mum" set _serexist=1
@@ -452,8 +452,16 @@ reg query HKLM\SOFTWARE\Wow6432Node\Microsoft\Office\ClickToRun\Configuration /v
 if not defined _ohookgo set _tsforgego=1
 
 echo:
+echo:       ============================================================
 echo:
+echo:                         DANY TECH
+echo:                  HERRAMIENTAS DE SISTEMA
 echo:
+echo:            Basado en Microsoft Activation Scripts
+echo:
+echo:       ============================================================
+echo:
+
 if %winbuild% GEQ 10240 if %winbuild% LEQ 19045 if not defined _serexist if not defined _evalexist if not defined _ltscexist (
 call :dk_color2 %_Green% "       Tip:" %_White% " To activate ESU updates after W10 EOL, use TSforge option."
 )
