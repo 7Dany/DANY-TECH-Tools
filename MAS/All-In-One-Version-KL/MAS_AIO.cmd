@@ -466,9 +466,6 @@ if %winbuild% GEQ 10240 if %winbuild% LEQ 19045 if not defined _serexist if not 
 call :dk_color2 %_Green% "       Tip:" %_White% " To activate ESU updates after W10 EOL, use TSforge option."
 )
 echo:
-echo:
-echo:       ______________________________________________________________
-echo:
 echo:                 Activation Methods:
 echo:
 if defined _hwidgo (
